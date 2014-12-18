@@ -1,4 +1,4 @@
-NoVp API Docs
+Framelocker API Docs
 ========
 
  # | Method        | TYPE | Attributues                                                    |
