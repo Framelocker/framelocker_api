@@ -24,7 +24,7 @@ Framelocker API Docs
 
 <p>1. Sending POST request to http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api with data:{method:"signin", params:{"Alexey", "1234"}}</p>
 <p>2. Catching response from API and obtaining <b>token</b> <i>For now when we create a new user, his token doesn't exist and he can get token manually from admin page (Settings), clicking refresh button. And after that the api method [signin] works fine for giving back token</i></p>
-<p>3. Using token for method [get_files] - http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api?method=get_files&token=91c26f0fec6f834d928fcc644ef8532849803f77. We'll receive json with status(1-ok,0-error,...), description(Text for human), json array with file's info</p>	
+<p>3. Using token for method [get_files] - http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api?method=get_files&token=91c26f0fec6f834d928fcc644ef8532849803f77. We'll receive json with status(1-ok,0-error,...), description(Text for human) and json array with file's info</p>	
 
 
 <h4>Small sample of code</h4>
