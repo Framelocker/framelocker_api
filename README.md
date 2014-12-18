@@ -34,7 +34,7 @@ Framelocker API Docs
 	$(function(){
 		$.ajax({
 			type: "POST",
-			url: "<?php echo base_url('app/api'); ?>",
+			url: "http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api",
 			dataType: "json",
 			data: { method:"signin", params:{login:"alexey@oxford.com", pass:"mypass123"}},
 			success: function(data){
