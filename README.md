@@ -1,7 +1,7 @@
 Framelocker API Docs
 ========
-<h3>API admin page - http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/novp/</h3>
-<h3>API access - http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api</h3>
+<h4>API admin page - http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/novp/</h4>
+<h4>API access - http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api</h4>
 <h4>Table 1.1 - API methods</h4>
 
  # | Method        | TYPE | Request                                                        | Response                              |
