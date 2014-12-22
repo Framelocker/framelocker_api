@@ -59,7 +59,7 @@ NodeJS Socket
 
 ```
 
-*([Domain] ec2-54-68-182-31.us-west-2.compute.amazonaws.com)
+	- ([Domain] ec2-54-68-182-31.us-west-2.compute.amazonaws.com)
 
 
 2. Create socket object:
@@ -78,7 +78,7 @@ var token = data.token;
 	 
 ```
 	
-*(where [data] json response for method signin)
+	- (where [data] json response for method signin)
 
 4. You should specify the room (rooms):
 
