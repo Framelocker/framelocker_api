@@ -53,7 +53,6 @@ Framelocker API Docs
 
 	
 #Chat API Docs(NodeJS Socket)
-========
 
 <h3> Socket connection </h3>
 
