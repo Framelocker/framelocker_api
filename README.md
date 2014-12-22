@@ -60,7 +60,7 @@ NodeJS Socket
 
 	```
 
-	- [Domain] - ec2-54-68-182-31.us-west-2.compute.amazonaws.com
+	> [Domain] - ec2-54-68-182-31.us-west-2.compute.amazonaws.com
 
 
 2. Create socket object:
@@ -82,7 +82,7 @@ NodeJS Socket
 		 
 	```
 
-	- (where [data] json response for method signin)
+	> where [data] json response for method signin
 
 
 4. You should specify the room (rooms):
@@ -117,7 +117,7 @@ NodeJS Socket
 	```
 	
 	
-	- In response JSON we can get "status" parameter and "description" parameter so we can react to.
+	> In response JSON we can get "status" parameter and "description" parameter so we can react to.
 
 
 7. To handle with "sending messages" operation just send message to socket(send_message) using token and room:
@@ -152,6 +152,6 @@ NodeJS Socket
 	```
 	
 	
-	- Our response data is array of messages(objects)
-	- *(if we will join multiple rooms we should sort our response data, so check val.path that contains room);
+	> Our response data is array of messages(objects)
+	> if we will join multiple rooms we should sort our response data, so check val.path that contains room;
 
