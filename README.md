@@ -74,7 +74,7 @@ NodeJS Socket
 
 <p>7. To handle with "sending messages" operation just send message to socket(send_message) using token and room:
 	- For example we want to send some text from "keypress" event
-	```sh
+	```
 	$("#messager input").keypress(function(e){
 		if(e.which == 13){
 			var message = $(this).val();
@@ -85,7 +85,7 @@ NodeJS Socket
 </p>
 
 <p>8. Also we should listen and wait for new messages in our room
-	```sh
+	```
 	socket.on('get_messages', function(data){
 		var message_display = $("#messager ul");
 		$.each(data, function(i, val){
