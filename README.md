@@ -1,8 +1,8 @@
 Framelocker API Docs
 ========
 <h3>Navigation</h3>
-1. [Server API](#Server API)
-2. [NodeJS Chat API](#Chat API Docs(NodeJS Socket))
+1. [Server API](#server-api)
+2. [NodeJS Chat API](#chat-api-docsnodejs-socket)
 
 #Server API
 
