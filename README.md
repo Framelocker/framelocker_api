@@ -50,9 +50,10 @@ Chat API Docs
 NodeJS Socket
 ========
 <h3> Socket connection </h3>
+
 1. Enable socket script to site where API will be used :
 
-```
+```javascript
 
 <script type="text/javascript" src="http://[domain]/socket.io/socket.io.js"></script> 
 
@@ -60,9 +61,11 @@ NodeJS Socket
 
 *([Domain] ec2-54-68-182-31.us-west-2.compute.amazonaws.com)
 
+
 2. Create socket object:
 
-```
+```javascript
+
 var socket = io('http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/api');
 
 ```
@@ -70,7 +73,7 @@ var socket = io('http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/api');
 
 3. Obtain token with authorization previous method (signin):
 	
-```
+```javascript
 var token = data.token;
 	 
 ```
