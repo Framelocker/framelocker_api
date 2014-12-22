@@ -28,6 +28,9 @@ Framelocker API Docs
 
 
 <h4>Small sample of code</h4>
+
+	```
+	
 	$(function(){
 		$.ajax({
 			type: "POST",
@@ -39,7 +42,15 @@ Framelocker API Docs
 			}
 		});
 	});
+	
+	```
+	
+```
 
+<script type="text/javascript" src="http://[domain]/socket.io/socket.io.js"></script> 
+
+```
+	
 Chat API Docs
 NodeJS Socket
 ========
