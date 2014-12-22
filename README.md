@@ -87,14 +87,14 @@ NodeJS Socket
 <p>8. Also we should listen and wait for new messages in our room
 	
 	
-	
+	```javascript
 	socket.on('get_messages', function(data){
 		var message_display = $("#messager ul");
 		$.each(data, function(i, val){
-			message_display.append("<li><p><img src='"+val.avatar+"'></p><p>"+val.name+"</p><p>"+val.msg+"</p></li>");			
+			message_display.append("<li><p><img [src]='"+val.avatar+"'></p><p>"+val.name+"</p><p>"+val.msg+"</p></li>");			
 		});
 	});
-	
+	```
 	
 	
 	- Our response data is array of messages(objects)
