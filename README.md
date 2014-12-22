@@ -60,33 +60,33 @@ NodeJS Socket
 
 *([Domain] ec2-54-68-182-31.us-west-2.compute.amazonaws.com)
 
-<p>2. Create socket object:
+2. Create socket object:
 
 ```
 var socket = io('http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/api');
 
 ```
 
-</p>
-<p>3. Obtain token with authorization previous method (signin):
+
+3. Obtain token with authorization previous method (signin):
 	
 ```
 var token = data.token;
 	 
 ```
 	
-	*(where [data] json response for method signin)
-</p>
-<p>4. You should specify the room (rooms):
+*(where [data] json response for method signin)
+
+4. You should specify the room (rooms):
 
 	```javascript
 	
-    - var room = "test_room"; (*example*)
+    var room = "test_room"; (*example*)
 	
 	```
 	
-</p>
-<p>5. For joining to that room send message to socket(join_room):
+
+5. For joining to that room send message to socket(join_room):
 	
 	
 	```javascript
@@ -94,10 +94,9 @@ var token = data.token;
 	- socket.emit('join_room', {token:token, room:room});
 	
 	```
-	
-</p>
 
-<p>6. We can listen log of our activity(api_response):
+
+6. We can listen log of our activity(api_response):
 	
 	
 	```javascript
@@ -110,9 +109,9 @@ var token = data.token;
 	
 	
 	- In response JSON we can get "status" parameter and "description" parameter so we can react to.
-</p>
 
-<p>7. To handle with "sending messages" operation just send message to socket(send_message) using token and room:
+
+7. To handle with "sending messages" operation just send message to socket(send_message) using token and room:
 	- For example we want to send some text from "keypress" event
 	
 	
@@ -127,11 +126,9 @@ var token = data.token;
 	});
 	
 	```
-	
-	
-</p>
 
-<p>8. Also we should listen and wait for new messages in our room
+
+8. Also we should listen and wait for new messages in our room
 	
 	
 	```javascript
@@ -148,5 +145,4 @@ var token = data.token;
 	
 	- Our response data is array of messages(objects)
 	- *(if we will join multiple rooms we should sort our response data, so check val.path that contains room);
-</p>
 
