@@ -43,7 +43,7 @@ Framelocker API Docs
 Chat API Docs
 NodeJS Socket
 ========
-# Socket connection
+<h3> Socket connection </h3>
 <p>1. Enable socket script to site where API will be used :
 	- <script type="text/javascript" src="http://[domain]/socket.io/socket.io.js"></script> 
 	*([Domain] ec2-54-68-182-31.us-west-2.compute.amazonaws.com)
@@ -52,48 +52,82 @@ NodeJS Socket
 	- var socket = io('http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/api');
 </p>
 <p>3. Obtain token with authorization previous method (signin):
+	
+	
+	```javascript
+	
 	- var token = data.token;
+	
+	```
+	
 	*(where [data] json response for method signin)
 </p>
 <p>4. You should specify the room (rooms):
-	- var room = "test_room"; (*example*)
+
+	```javascript
+	
+    - var room = "test_room"; (*example*)
+	
+	```
+	
 </p>
 <p>5. For joining to that room send message to socket(join_room):
 	
+	
+	```javascript
+	
 	- socket.emit('join_room', {token:token, room:room});
+	
+	```
 	
 </p>
 
 <p>6. We can listen log of our activity(api_response):
+	
+	
+	```javascript
+	
 	socket.on('api_response', function(data){
 		$("#responses").html("<p>Status: "+data.status+". "+data.description+"</p>");
 	});
+	
+	```
+	
 	
 	- In response JSON we can get "status" parameter and "description" parameter so we can react to.
 </p>
 
 <p>7. To handle with "sending messages" operation just send message to socket(send_message) using token and room:
 	- For example we want to send some text from "keypress" event
-	```
+	
+	
+	
+	```javascript
+	
 	$("#messager input").keypress(function(e){
 		if(e.which == 13){
 			var message = $(this).val();
 			socket.emit("send_message", {token:token, room:room, msg:message});
 		}
 	});
+	
 	```
+	
+	
 </p>
 
 <p>8. Also we should listen and wait for new messages in our room
 	
 	
 	```javascript
+	
 	socket.on('get_messages', function(data){
 		var message_display = $("#messager ul");
 		$.each(data, function(i, val){
 			message_display.append("<li><p><img [src]='"+val.avatar+"'></p><p>"+val.name+"</p><p>"+val.msg+"</p></li>");			
 		});
 	});
+	
 	```
 	
 	
