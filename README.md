@@ -85,14 +85,18 @@ NodeJS Socket
 </p>
 
 <p>8. Also we should listen and wait for new messages in our room
-	```
+	
+	
+	
 	socket.on('get_messages', function(data){
 		var message_display = $("#messager ul");
 		$.each(data, function(i, val){
 			message_display.append("<li><p><img src='"+val.avatar+"'></p><p>"+val.name+"</p><p>"+val.msg+"</p></li>");			
 		});
 	});
-	```
+	
+	
+	
 	- Our response data is array of messages(objects)
 	- *(if we will join multiple rooms we should sort our response data, so check val.path that contains room);
 </p>
