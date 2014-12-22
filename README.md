@@ -1,5 +1,11 @@
 Framelocker API Docs
 ========
+<h3>Navigation</h3>
+1. [Server API](#Server API)
+2. [NodeJS Chat API](#Chat API Docs(NodeJS Socket))
+
+#Server API
+
 <h4>API admin page - http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/novp/</h4>
 <h4>API access - http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api</h4>
 <h4>Table 1.1 - API methods</h4>
@@ -46,9 +52,9 @@ Framelocker API Docs
 	```
 
 	
-Chat API Docs
-NodeJS Socket
+#Chat API Docs(NodeJS Socket)
 ========
+
 <h3> Socket connection </h3>
 
 1. Enable socket script to site where API will be used:
