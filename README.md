@@ -21,8 +21,7 @@ Framelocker API Docs
  4 | signin        | POST | {method:"signin", params:{login, pass}}                        | {status, description, <b>token</b>}   |
  5 | signout       | POST | {method:"signout", token}                                      | {status, description}                 |         
  6 | upload_avatar | POST | {method:"upload_avatar", token, novp_file}                     | {status, description, [filename]}     |          
- 7 | set_name      | POST | {method:"set_name", token, params: {fstname, lstname}}         | {status, description}                 |   
----|---------------|------|----------------------------------------------------------------|---------------------------------------|
+ 7 | set_name      | POST | {method:"set_name", token, params: {fstname, lstname}}         | {status, description}                 |      
    |               |      |    <h3>For WOD chat</h3>                                       |                                       | 
  8 | get_boxes     | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
  9 | assign_box    | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
