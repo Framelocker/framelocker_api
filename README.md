@@ -44,18 +44,13 @@ Framelocker API Docs
 	});
 	
 	```
-	
-```
 
-<script type="text/javascript" src="http://[domain]/socket.io/socket.io.js"></script> 
-
-```
 	
 Chat API Docs
 NodeJS Socket
 ========
 <h3> Socket connection </h3>
-<p>1. Enable socket script to site where API will be used :
+1. Enable socket script to site where API will be used :
 
 ```
 
@@ -64,7 +59,7 @@ NodeJS Socket
 ```
 
 *([Domain] ec2-54-68-182-31.us-west-2.compute.amazonaws.com)
-</p>
+
 <p>2. Create socket object:
 
 ```
