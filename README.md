@@ -45,20 +45,29 @@ NodeJS Socket
 ========
 <h3> Socket connection </h3>
 <p>1. Enable socket script to site where API will be used :
-	- <script type="text/javascript" src="http://[domain]/socket.io/socket.io.js"></script> 
-	*([Domain] ec2-54-68-182-31.us-west-2.compute.amazonaws.com)
+
+```
+
+<script type="text/javascript" src="http://[domain]/socket.io/socket.io.js"></script> 
+
+```
+
+*([Domain] ec2-54-68-182-31.us-west-2.compute.amazonaws.com)
 </p>
 <p>2. Create socket object:
-	- var socket = io('http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/api');
+
+```
+var socket = io('http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/api');
+
+```
+
 </p>
 <p>3. Obtain token with authorization previous method (signin):
 	
-	
-	```javascript
-	
-	- var token = data.token;
-	
-	```
+```
+var token = data.token;
+	 
+```
 	
 	*(where [data] json response for method signin)
 </p>
