@@ -270,8 +270,8 @@ Framelocker API Docs
 	
 	```
 	
-	> Object "data.users" contains users
-	> We can count users in specific room or getting other info
+	> Object "data.users" contains users.
+	> We can count users in specific room or getting other info.
 	
 3. Also developers have access for knowing total amount of messages in specific room (<b>count_room_records</b>):
 
