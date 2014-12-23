@@ -4,7 +4,7 @@ Framelocker API Docs
 1. [Server API](#server-api)
 2. [NodeJS Chat API](#chat-api-docsnodejs-socket)
 3. [NodeJS Chat API Invitation](#invitation-for-chat)
-4. [WOD Chat Specialities](#wod-chat-specialties)
+4. [WOD Chat specialities](#wod-chat-specialties)
 
 #Server API
 
@@ -226,7 +226,7 @@ Framelocker API Docs
 	
 	```
 	
-<h3>WOD Chat specialties</h3>
+<h3>WOD Chat specialities</h3>
 
 1. For Wod chat box(room) you should specified additional prefix(<b>"box_"</b>)
 
