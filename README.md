@@ -30,7 +30,7 @@ Framelocker API Docs
  
  <h4>Method details</h4>
  
- > 8. Role - integer. Value "7" means teacher's role
+ > 8) Role - integer. Value "7" means teacher's role
  
 <h4>Example of usage</h4>
 <p>We need to know about user's files</p>
