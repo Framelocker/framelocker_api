@@ -65,7 +65,7 @@ Framelocker API Docs
 	
 	```javascript
 
-	<script type="text/javascript" src="http://[domain]/socket.io/socket.io.js"></script> 
+	<script type="text/javascript" src="http://[domain]:8081/socket.io/socket.io.js"></script> 
 
 	```
 
@@ -89,7 +89,7 @@ Framelocker API Docs
 
 	```javascript
 
-	var socket = io('http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/api?token=[token]');
+	var socket = io('http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com:8081/api?token=[token]');
 
 	```
 
@@ -224,3 +224,17 @@ Framelocker API Docs
 	...
 	
 	```
+	
+<h3>WOD Chat specialties</h3>
+
+1. For Wod chat box(room) you should specified additional prefix(<b>"box_"</b>)
+
+	```javascript
+	
+	...
+	var room = "box_" + box_id;
+	...
+	
+	```
+	
+	> <i>box_id</i> - it's just WOD chat room
