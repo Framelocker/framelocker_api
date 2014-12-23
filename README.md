@@ -244,3 +244,43 @@ Framelocker API Docs
 	```
 	
 	> <i>box_id</i> - it's just WOD chat room
+
+<h3>Chat Statistics</h3>
+
+1. Getting online info in specific "room" (<b>get_room_users</b>):
+
+	```javascript
+	
+	...
+	socket.emit('get_room_users', {room: "Room name"});
+	...
+	
+	```
+	
+2. Catching response of JSON users data in <b>"notification"</b> listener specified by <i>"request_type = users_in_room"</i>
+	
+	```javascript
+	
+	...
+	else if(data.request_type == 'users_in_room'){
+		var users = data.users; 
+	}
+	...
+	
+	```
+	
+	> Object "data.users" contains users
+	> We can count users in specific room or getting other info
+	
+3. Also developers have access for knowing total amount of messages in specific room (<b>count_room_records</b>):
+
+	```javascript
+	
+	...
+	socket.emit('count_room_records', {room:room});
+	...
+	
+	```
+	
+	> Getting response from <b>"notification"</b> listener in defined by <i>"request_type=room_records"</i>
+	> Amount of messages we can find in <b>data.count</b>
