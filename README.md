@@ -13,21 +13,23 @@ Framelocker API Docs
 <h4>API access - http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api</h4>
 <h4>Table 1.1 - API methods</h4>
 
- # | Method        | TYPE | Request                                                        | Response                              |
----|---------------| -----|----------------------------------------------------------------|---------------------------------------|
- 1 | upload_file   | POST | {method:upload_file, token, novp_file}                         | {status, description, [title, src]}   |
- 2 | get_files     | GET  | {method:get_files, token}                                      | {status, description,                 |
-   |			   |	  |															 	   | [file_data:{id,user_id,bucket_id,     |
-   |               |      |                                                        		   | filename,size,ext,aws,date}]}         |
- 3 | register      | POST | {method:"register", params: {username, password, [novp_file]}} | {status, description}                 |     
- 4 | signin        | POST | {method:"signin", params:{login, pass}}                        | {status, description, <b>token</b>}   |
- 5 | signout       | POST | {method:"signout", token}                                      | {status, description}                 |         
- 6 | upload_avatar | POST | {method:"upload_avatar", token, novp_file}                     | {status, description, [filename]}     |          
- 7 | set_name      | POST | {method:"set_name", token, params: {fstname, lstname}}         | {status, description}                 |      
- 8 | add_user      | POST | {method:"add_user", token, params: {name,role=7,email,message}}| {status, description}                 |      
-   |               |      |    <h3>For WOD chat</h3>                                       |                                       | 
- 9 | get_boxes     | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
- 10| assign_box    | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
+ # | Method        		  | TYPE | Request                                                        | Response                              |
+---|----------------------|------|----------------------------------------------------------------|---------------------------------------|
+ 1 | upload_file  		  | POST | {method:upload_file, token, novp_file}                         | {status, description, [title, src]}   |
+ 2 | get_files   		  | GET  | {method:get_files, token}                                      | {status, description,                 |
+   |			 		  |	     |  														 	  | [file_data:{id,user_id,bucket_id,     |
+   |             		  |      |                                                        		  | filename,size,ext,aws,date}]}         |
+ 3 | register      		  | POST | {method:"register", params: {username, password, [novp_file]}} | {status, description}                 |     
+ 4 | signin      		  | POST | {method:"signin", params:{login, pass}}                        | {status, description, <b>token</b>}   |
+ 5 | signout      		  | POST | {method:"signout", token}                                      | {status, description}                 |         
+ 6 | upload_avatar 		  | POST | {method:"upload_avatar", token, novp_file}                     | {status, description, [filename]}     |          
+ 7 | set_name      		  | POST | {method:"set_name", token, params: {fstname, lstname}}         | {status, description}                 |      
+ 8 | add_user             | POST | {method:"add_user", token, params: {name,role=7,email,message}}| {status, description}                 |      
+ 9 | assigning_to_facebook| POST | {method:"assigning_to_facebook", token, fid}                   | {status, description}                 |
+ 10| prime_check          | GET  | {method:"prime_check", token}                                  | {status, description}                 |
+   |  		              |      |    <h3>For WOD chat</h3>                                       |                                       | 
+ 11| get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
+ 12| assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
  
  <h4>Method details</h4>
  
