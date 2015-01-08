@@ -48,7 +48,7 @@ Framelocker API Docs
 
 <h4>Small sample of code</h4>
 
-	```
+	```javascript
 	
 	$(function(){
 		$.ajax({
@@ -66,7 +66,7 @@ Framelocker API Docs
 	
 <h4>Sample of uploading file with custom title and description</h4>
 
-	```
+	```javascript
 	
 	<form enctype="multipart/form-data" method="post" id="formaFile">
 		<input type="file" name="novp_file" size="20" />
