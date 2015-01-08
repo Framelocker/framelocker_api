@@ -57,7 +57,7 @@ Framelocker API Docs
 			dataType: "json",
 			data: { method:"signin", params:{login:"alexey@oxford.com", pass:"mypass123"}},
 			success: function(data){
-				// Using data
+				> Using data
 			}
 		});
 	});
