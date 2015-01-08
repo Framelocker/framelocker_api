@@ -1,5 +1,6 @@
 Framelocker API Docs
 ========
+
 <h3>Navigation</h3>
 
 1. [Server API](#server-api)
@@ -37,8 +38,10 @@ Framelocker API Docs
  > 8) Role - integer. Value "7" means teacher's role
  
 <h4>Example of usage</h4>
-<p>We need to know about user's files</p>
-<p>Steps:</p>
+
+> We need to know about user's files
+
+<h4>Steps:</h4>
 
 1. Authorization
 2. Get user's files
@@ -69,7 +72,7 @@ Framelocker API Docs
 	
 <h4>Sample of uploading file with custom title and description</h4>
 
-	```sh
+	```javascript
 	
 	<form enctype="multipart/form-data" method="post" id="formaFile">
 		<input type="file" name="novp_file" size="20" />
