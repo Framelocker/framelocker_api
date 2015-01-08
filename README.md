@@ -15,7 +15,7 @@ Framelocker API Docs
 
  # | Method        		  | TYPE | Request                                                        | Response                              |
 ---|----------------------|------|----------------------------------------------------------------|---------------------------------------|
- 1 | upload_file  		  | POST | {method:upload_file, token, novp_file}                         | {status, description, [title, src]}   |
+ 1 | upload_file  		  | POST | {method:upload_file, token, novp_file,[title],[description]}   | {status, description, [title, src]}   |
  2 | get_files   		  | GET  | {method:get_files, token}                                      | {status, description,                 |
    |			 		  |	     |  														 	  | [file_data:{id,user_id,bucket_id,     |
    |             		  |      |                                                        		  | filename,size,ext,aws,date}]}         |
@@ -60,6 +60,40 @@ Framelocker API Docs
 				// Using data
 			}
 		});
+	});
+	
+	```
+	
+<h4>Sample of uploading file with custom title and description</h4>
+
+	```
+	
+	<form enctype="multipart/form-data" method="post" id="formaFile">
+		<input type="file" name="novp_file" size="20" />
+		<input type="hidden" name="method" value="upload_file">
+		<input type="hidden" name="title" value="Holidays">
+		<input type="hidden" name="description" value="My amazing holidays">
+		<input type="hidden" name="token" value="ed0a8b8c12bea7d4a64b9afb38332646457fd693">
+		<input type="submit" value="upload_file">
+	</form>		
+	
+	```
+	
+	```javascript
+	
+	$("#formaFile").submit(function(e) {
+			var formData = new FormData($("#formaFile")[0]);
+			$.ajax({
+				type: "POST",
+				url: "http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api",
+				processData: false,
+  				contentType: false,
+				data: formData,				
+				success: function(data){
+					console.log(data); // Check response data
+				}
+		});
+		e.preventDefault();			
 	});
 	
 	```
