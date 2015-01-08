@@ -38,12 +38,13 @@ Framelocker API Docs
 <h4>Example of usage</h4>
 <p>We need to know about user's files</p>
 <p>Steps:</p>
-<p><i>1. Authorization </i></p>
-<p><i>2. Get user's files </i></p>
 
-<p>1. Sending POST request to http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api with data:{method:"signin", params:{"Alexey", "1234"}}</p>
-<p>2. Catching response from API and obtaining <b>token</b> <i></p>
-<p>3. Using token for method [get_files] - http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api?method=get_files&token=91c26f0fec6f834d928fcc644ef8532849803f77. We'll receive json with status(1-ok,0-error,...), description(Text for human) and json array with file's info</p>	
+1. Authorization
+2. Get user's files
+
+1. Sending POST request to http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api with data:{method:"signin", params:{"Alexey", "1234"}}
+2. Catching response from API and obtaining <b>token</b>
+3. Using token for method [get_files] - http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api?method=get_files&token=91c26f0fec6f834d928fcc644ef8532849803f77. We'll receive json with status(1-ok,0-error,...), description(Text for human) and json array with file's info
 
 
 <h4>Small sample of code</h4>
@@ -57,7 +58,7 @@ Framelocker API Docs
 			dataType: "json",
 			data: { method:"signin", params:{login:"alexey@oxford.com", pass:"mypass123"}},
 			success: function(data){
-				> Using data
+				// Using data
 			}
 		});
 	});
