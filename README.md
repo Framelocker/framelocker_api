@@ -67,7 +67,7 @@ Framelocker API Docs
 	
 <h4>Sample of uploading file with custom title and description</h4>
 
-	```javascript
+	```html
 	
 	<form enctype="multipart/form-data" method="post" id="formaFile">
 		<input type="file" name="novp_file" size="20" />
