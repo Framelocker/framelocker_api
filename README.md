@@ -114,11 +114,11 @@ Framelocker API Docs
 	
 	```javascript
 
-	<script type="text/javascript" src="http://[domain]:8081/socket.io/socket.io.js"></script> 
+	<script type="text/javascript" src="http://ec2-54-68-53-75.us-west-2.compute.amazonaws.com:8081/socket.io/socket.io.js"></script> 
 
 	```
 
-	> [Domain] - ec2-54-68-182-31.us-west-2.compute.amazonaws.com
+	> [Domain] - http://ec2-54-68-53-75.us-west-2.compute.amazonaws.com - Domain where NodeJS server installed
 
 
 2. Obtain token with authorization previous method (signin):
@@ -138,7 +138,7 @@ Framelocker API Docs
 
 	```javascript
 
-	var socket = io('http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com:8081/api?token=[token]');
+	var socket = io('http://ec2-54-68-53-75.us-west-2.compute.amazonaws.com:8081/api?token=[token]');
 
 	```
 
