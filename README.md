@@ -33,7 +33,7 @@ Framelocker API Docs
  11| get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
  12| assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
  __|______________________|______|________________________________________________________________|_______________________________________|
- 13| edit_file            | POST | {method:"edit_file", token, params:{fid, description}}         | {status, description}                 |
+ 13| edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
  
  <h4>Method details</h4>
  
