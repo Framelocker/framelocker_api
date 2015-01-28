@@ -32,6 +32,7 @@ Framelocker API Docs
    |  		              |      |    <h3>For WOD chat</h3>                                       |                                       | 
  11| get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
  12| assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
+ 13| edit_file            | POST | {method:"edit_file", token, params:{fid, description}}         | {status, description}                 |
  
  <h4>Method details</h4>
  
