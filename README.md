@@ -11,17 +11,19 @@ Framelocker API Docs
 
 #Server API
 
-<h4>API admin page - http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/novp/</h4>
-<h4>API access - http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api</h4>
+<h4>API admin page - http://api.framelocker.com/app/novp/</h4>
+<h4>API access - http://api.framelocker.com/app/api</h4>
 <h4>Table 1.1 - API methods</h4>
 
  # | Method        		  | TYPE | Request                                                        | Response                              |
 ---|----------------------|------|----------------------------------------------------------------|---------------------------------------|
- 1 | upload_file  		  | POST | {method:upload_file, token, novp_file,[title],[description]}   | {status, description, [title, src]}   |
+ 1 | upload_file  		  | POST | {method:upload_file, token, novp_file,[title],[description],   |                                       |
+   |					  |      |  response_host]}   											  | {status, description, [title, src]}   |
  2 | get_files   		  | GET  | {method:get_files, token}                                      | {status, description,                 |
    |			 		  |	     |  														 	  | [file_data:{id,user_id,bucket_id,     |
    |             		  |      |                                                        		  | filename,size,ext,aws,date}]}         |
- 3 | register      		  | POST | {method:"register", params: {username, password, [novp_file]}} | {status, description}                 |     
+ 3 | register      		  | POST | {method:"register", params: {username, password, [novp_file],  |
+   |					  |		 |	[response_host]	}}                                            | {status, description}                 |     
  4 | signin      		  | POST | {method:"signin", params:{login, pass}}                        | {status, description, <b>token</b>}   |
  5 | signout      		  | POST | {method:"signout", token}                                      | {status, description}                 |         
  6 | upload_avatar 		  | POST | {method:"upload_avatar", token, novp_file}                     | {status, description, [filename]}     |          
@@ -48,9 +50,9 @@ Framelocker API Docs
 1. Authorization
 2. Get user's files
 
-1. Sending POST request to http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api with data:{method:"signin", params:{"Alexey", "1234"}}
+1. Sending POST request to http://api.framelocker.com/app/api with data:{method:"signin", params:{"Alexey", "1234"}}
 2. Catching response from API and obtaining <b>token</b>
-3. Using token for method [get_files] - http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api?method=get_files&token=91c26f0fec6f834d928fcc644ef8532849803f77. We'll receive json with status(1-ok,0-error,...), description(Text for human) and json array with file's info
+3. Using token for method [get_files] - http://api.framelocker.com/app/api?method=get_files&token=91c26f0fec6f834d928fcc644ef8532849803f77. We'll receive json with status(1-ok,0-error,...), description(Text for human) and json array with file's info
 
 ========
 
@@ -61,7 +63,7 @@ Framelocker API Docs
 	$(function(){
 		$.ajax({
 			type: "POST",
-			url: "http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api",
+			url: "http://api.framelocker.com/app/api",
 			dataType: "json",
 			data: { method:"signin", params:{login:"alexey@oxford.com", pass:"mypass123"}},
 			success: function(data){
@@ -93,7 +95,7 @@ Framelocker API Docs
 			var formData = new FormData($("#formaFile")[0]);
 			$.ajax({
 				type: "POST",
-				url: "http://ec2-54-68-182-31.us-west-2.compute.amazonaws.com/app/api",
+				url: "http://api.framelocker.com/app/api",
 				processData: false,
   				contentType: false,
 				data: formData,				
