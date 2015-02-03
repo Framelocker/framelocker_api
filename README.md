@@ -36,10 +36,12 @@ Framelocker API Docs
  12| assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
  __|______________________|______|________________________________________________________________|_______________________________________|
  13| edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
+ 14| get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
  
  <h4>Method details</h4>
  
  > 8) Role - integer. Value "7" means teacher's role
+ > * [] - Optional parameters
  
 <h4>Example of usage</h4>
 
