@@ -29,7 +29,8 @@ Framelocker API Docs
  6 | upload_avatar 		  | POST | {method:"upload_avatar", token, novp_file}                     | {status, description, [filename]}     |          
  7 | set_name      		  | POST | {method:"set_name", token, params: {fstname, lstname}}         | {status, description}                 |      
  8 | add_user             | POST | {method:"add_user", token, params: {name,role=7,email,message}}| {status, description}                 |      
- 9 | assigning_to_facebook| POST | {method:"assigning_to_facebook", token, fid}                   | {status, description}                 |
+ 9 | assigning_to_facebook| POST | {method:"assigning_to_facebook",token,                         |                                       |   
+   |                      |      |          params:{fid,access_token}}                            | {status, description}                 |
  10| prime_check          | GET  | {method:"prime_check", token}                                  | {status, description}                 |
    |  		              |      |    <h3>For WOD chat</h3>                                       |                                       | 
  11| get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
@@ -42,6 +43,7 @@ Framelocker API Docs
  
  > 8) Role - integer. Value "7" means teacher's role
  > * [] - Optional parameters
+ > 9) access_token - Facebook Access Token from authorization process
  
 <h4>Example of usage</h4>
 
