@@ -42,7 +42,7 @@ Framelocker API Docs
  <h4>Method details</h4>
  
  > 8) Role - integer. Value "7" means teacher's role
- > * '[]' - Optional parameters
+ > '[]' - Optional parameters
  > 9) access_token - Facebook Access Token from authorization process
  
 <h4>Example of usage</h4>
