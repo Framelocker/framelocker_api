@@ -131,11 +131,11 @@ Framelocker API Docs
 	
 	```javascript
 
-	<script type="text/javascript" src="http://ec2-54-68-53-75.us-west-2.compute.amazonaws.com:8081/socket.io/socket.io.js"></script> 
+	<script type="text/javascript" src="http://chat.framelocker.com:8081/socket.io/socket.io.js"></script> 
 
 	```
 
-	> [Domain] - http://ec2-54-68-53-75.us-west-2.compute.amazonaws.com - Domain where NodeJS server installed
+	> [Domain] - http://chat.framelocker.com - Domain where NodeJS server installed
 
 
 2. Obtain token with authorization previous method (signin):
@@ -155,7 +155,7 @@ Framelocker API Docs
 
 	```javascript
 
-	var socket = io('http://ec2-54-68-53-75.us-west-2.compute.amazonaws.com:8081/api?token=[token]');
+	var socket = io('chat.framelocker.com:8081/api?token=[token]');
 
 	```
 
