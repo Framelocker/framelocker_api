@@ -54,6 +54,8 @@ Framelocker API Docs
  
  > 9) access_token - Facebook Access Token from authorization process
  
+ > 3) Register method requires Username and Password with restrictions on the number of characters - (5-200)
+ 
 <h4>Example of usage</h4>
 
 > We need to know about user's files
