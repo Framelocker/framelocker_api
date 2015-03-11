@@ -38,13 +38,14 @@ Framelocker API Docs
  8 | add_user             | POST | {method:"add_user", token, params: {name,role=7,email,message}}| {status, description}                 |      
  9 | assigning_to_facebook| POST | {method:"assigning_to_facebook",token,                         |                                       |   
    |                      |      |          params:{fid,access_token}}                            | {status, description}                 |
+   | facebook_signin      | POST | {method:"facebook_signin", params:{fid, access_token}}         | {status, description, user_data}      |
  10| prime_check          | GET  | {method:"prime_check", token}                                  | {status, description}                 |
    |  		              |      |    <h3>For WOD chat</h3>                                       |                                       | 
- 11| get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
- 12| assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
+   | get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
+   | assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
  __|______________________|______|________________________________________________________________|_______________________________________|
- 13| edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
- 14| get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
+   | edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
+   | get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
  
  <h4>Method details</h4>
  
