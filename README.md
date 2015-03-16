@@ -41,7 +41,7 @@ Framelocker API Docs
 10 | facebook_signin      | POST | {method:"facebook_signin", params:{fid, access_token}}         | {status, description, user_data}      |
 11 | prime_check          | GET  | {method:"prime_check", token}                                  | {status, description}                 |
 12 | get_user_info        | POST | {method:"get_user_info", token, params:{user_id}}              | {status,description,user_data:{id..}} |
-13 | add_contact          | POST | {method:"add_contact", token, params:{user_id||email,message}} | {status,description}                  |
+13 | add_contact          | POST | {method:"add_contact",token,params:{user_id or email,message}} | {status,description}                  |
    |  		              |      |    <h3>For WOD chat</h3>                                       |                                       | 
 1  | get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
 2  | assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
