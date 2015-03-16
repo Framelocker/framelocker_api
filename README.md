@@ -43,11 +43,11 @@ Framelocker API Docs
 12 | get_user_info        | POST | {method:"get_user_info", token, params:{user_id}}              | {status,description,user_data:{id..}} |
 13 | add_contact          | POST | {method:"add_contact", token, params:{user_id||email,message}} | {status,description}                  |
    |  		              |      |    <h3>For WOD chat</h3>                                       |                                       | 
-13 | get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
-14 | assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
+1  | get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
+2  | assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
  __|______________________|______|________________________________________________________________|_______________________________________|
-15 | edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
-16 | get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
+*  | edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
+*  | get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
  
  <h4>Method details</h4>
  
