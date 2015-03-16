@@ -29,7 +29,7 @@ Framelocker API Docs
  2 | get_files   		  | GET  | {method:get_files, token}                                      | {status, description,                 |
    |			 		  |	     |  														 	  | [file_data:{id,user_id,bucket_id,     |
    |             		  |      |                                                        		  | filename,size,ext,aws,date}]}         |
- 3 | register      		  | POST | {method:"register", params: {username, password, [novp_file],  |
+ 3 | register      		  | POST | {method:"register", params: {username, password, [novp_file],  |                                       |
    |					  |		 |	[response_host]	}}                                            | {status, description}                 |     
  4 | signin      		  | POST | {method:"signin", params:{login, pass}}                        | {status, description, <b>token</b>}   |
  5 | signout      		  | POST | {method:"signout", token}                                      | {status, description}                 |         
@@ -43,6 +43,10 @@ Framelocker API Docs
 12 | get_user_info        | POST | {method:"get_user_info", token, params:{user_id}}              | {status,description,user_data:{id..}} |
 13 | add_contact          | POST | {method:"add_contact",token,params:{user_id or email,message}} | {status,description}                  |
 14 | register_device      | POST | {method:"register_device", token, params:{device_signature}}   | {status,description}                  |
+15 | get_contact_requests | POST | {method:"get_contact_requests", token}                         | {status,description,contact_requests: |
+   |  		              |      |                                                                |   [{request_id,user_id,message}]      |      
+16 |approve_contact_req...| POST | {method:"approve_contact_request", token, params:{request_id,  | {status,description}                  |
+   |  		              |      |      accept:('true' or 'false')}}                              |                                       |      
    |  		              |      |    <h3>For WOD chat</h3>                                       |                                       | 
 1  | get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
 2  | assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
