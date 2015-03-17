@@ -47,6 +47,10 @@ Framelocker API Docs
    |  		              |      |                                                                |   [{request_id,user_id,message}]      |      
 16 |approve_contact_req...| POST | {method:"approve_contact_request", token, params:{request_id,  | {status,description}                  |
    |  		              |      |      accept:('true' or 'false')}}                              |                                       |      
+17 | post_status          | POST | {method:"post_status", token, params:{status,message,          | {status,description}                  |
+   |  		              |      |                                       attachments}}            |                                       |      
+18 | get_statuses_list    | POST | {method:"get_statuses_list", token, params:{limit, offset}}    | {status,description,statuses:         |
+   |  		              |      |                                                                |  [{id,uid,status,message,attachments}]|      
    |  		              |      |    <h3>For WOD chat</h3>                                       |                                       | 
 1  | get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
 2  | assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
