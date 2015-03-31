@@ -16,9 +16,9 @@ Framelocker API Docs
  > <h5>API access(<b>DEVELOPMENT</b>) - http://54.148.247.25/app/api</h4>
 
 
- > <h5>API admin page(<b>PRODUCTION</b>) - http://api.framelocker.com/app/novp/</h4>
+ > <h5>API admin page(<b>PRODUCTION</b>) - http://app.framelocker.com/app/novp/</h4>
 
- > <h5>API access(<b>PRODUCTION</b>) - http://api.framelocker.com/app/api</h4>
+ > <h5>API access(<b>PRODUCTION</b>) - http://app.framelocker.com/app/api</h4>
 
 <h4>Table 1.1 - API methods</h4>
 
