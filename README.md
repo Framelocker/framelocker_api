@@ -4,9 +4,8 @@ Framelocker API Docs
 <h3>Navigation</h3>
 
 1. [Server API](#server-api)
-2. [NodeJS Chat API](#chat-api-docsnodejs-socket)
-3. [NodeJS Chat API Invitation](#invitation-for-chat)
-4. [WOD Chat specialities](#wod-chat-specialties)
+2. [NodeJS Chat API](/docs/chat_invitation.md)
+3. [WOD Chat specialities](#wod-chat-specialties)
 5. [Chat statistic](#chat-statistics)
 
 #Server API
