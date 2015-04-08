@@ -54,6 +54,9 @@ Framelocker API Docs
    |  		              |      |    <h3>For WOD chat</h3>                                       |                                       | 
 1  | get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
 2  | assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
+3  | wc_post_status  	  | POST | {method:"wc_post_status", token, params: {message,status_icon, | {status, status_id}                   |
+   |  		              |      | contact_list, attachments}}                                    |                                       |
+4  | wc_get_status_feed   | POST | {method:"wc_get_status_feed", token}                           | {status, statuses}                    |   
  __|______________________|______|________________________________________________________________|_______________________________________|
 *  | edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
 *  | get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
