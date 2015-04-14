@@ -1,3 +1,7 @@
+<?php
+	$api_host = "http://chat.framelocker.com:8081/";
+	//$api_host = "http://localhost:8081/";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://localhost:8081/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="<?=$api_host?>socket.io/socket.io.js"></script>
 </head>
 <body>
 
@@ -90,14 +94,14 @@
 
 <script type="text/javascript">
 	(function() {
-		var socket = io('http://localhost:8081/api?token=laganna-emperror');
+		var socket = io('<?=$api_host?>api?token=fa1152a47888be2b2500bd9ef543282d0b39e2c8');
 		var el = $(".media.hide");
 		var pm_el = $(".chat_el");
 		if(socket === undefined)
 			return false;	
 		
 		$("#inv").click(function() {
-			socket.emit('invite_to_chat', {uid:[23,49], room:"hatiko"});
+			socket.emit('invite_to_chat', {uid:[8551], room:"hatiko"});
 		});	
 
 

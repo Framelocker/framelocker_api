@@ -1,3 +1,7 @@
+<?php
+	$api_host = "http://chat.framelocker.com:8081/";
+	//$api_host = "http://localhost:8081/";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://localhost:8081/socket.io/socket.io.js"></script>	
+	<script type="text/javascript" src="<?=$api_host?>socket.io/socket.io.js"></script>	
 </head>
 <body>
 <div class="container">	
@@ -35,7 +39,7 @@
 </li>
 <script type="text/javascript">
 	(function() {
-		var socket = io('http://localhost:8081/api?token=siempreymore');
+		var socket = io('<?=$api_host?>api?token=f87fa1a825a8560ffb06d6ead924b07e84dbab12');
 	
 		var el = $(".media.hide");
 		if(socket === undefined)
