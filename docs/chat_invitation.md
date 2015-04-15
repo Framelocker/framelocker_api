@@ -14,7 +14,7 @@
 ```
 > - [Domain] - http://chat.framelocker.com - Domain where NodeJS server installed
 
- * Obtain token with authorization method [`signin`](http://vk.com) using server side API:
+ * Obtain token with authorization method [`signin`] using server side API:
  
 ```javascript
 	var token = data.token;		 
@@ -25,6 +25,16 @@
 ```javascript
 	var socket = io('chat.framelocker.com:8081/api?token=[token]');
 ``` 
+### Any further actions developer should start after successful authorization
+
+```javascript
+socket.on('notifications', function(data){
+	if(data.request_method == 'connection' && data.status == 1){
+		... // Success
+	}
+}
+``` 
+
 ### Connecting to room
 * You should specify the room (rooms):
 
