@@ -4,6 +4,9 @@
 
 ### Socket connection
 
+#### Development Socket - 8081
+#### Production Socket - 8082
+
  *  Enable socket script to site where API will be used:
 
 ```javascript
