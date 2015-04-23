@@ -164,6 +164,17 @@ socket.on('notifications', function(data){
 	...	
 ```
 
+### Get room after triggering invite Event
+
+* After triggering `invite_to_chat` event we should obtain room name for further operations
+
+```javascript	
+if(data.request_type == 'invitation_send'){
+  	var room = data.params.room;
+	...
+}
+```
+
 ### Group Invitation
 
 * For group invite just define array of user IDs and use `invite_to_chat`:
