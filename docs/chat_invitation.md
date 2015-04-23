@@ -148,10 +148,11 @@ socket.on('notifications', function(data){
 
 ```javascript
 socket.on('notifications', function(data){
-  if(data.type == "accepted_invitation"){
+  if(data.request_type == "accepted_invitation"){
       $("#panelGeneral").addClass("hide");
       $("#panelPM").removeClass("hide");
-      var udata = data.params.userData;	
+      var udata = data.params.user_data;
+	  var room = data.params.room;	  
       ...
 ```
 > - Data of `notifications` holds User Data `data.params.userData` and room name `data.params.room`
