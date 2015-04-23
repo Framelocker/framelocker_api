@@ -94,9 +94,9 @@ socket.on('notifications', function(data){
 
 ### Invites (General)
 
-* It is possible to invite people with `room` or without.
+* It is possible to invite people with `room` or ~~without~~ (Unavailable for now).
 * In case 2 - API will generate room name for you
-* Using static room name will help us to catch previous message history
+* ~~Using static room name will help us to catch previous message history~~ (Unavailable for now)
 
 ### Invite to Single User
 
