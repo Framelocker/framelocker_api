@@ -148,9 +148,7 @@ socket.on('notifications', function(data){
 
 ```javascript
 socket.on('notifications', function(data){
-  if(data.request_type == "accepted_invitation"){
-      $("#panelGeneral").addClass("hide");
-      $("#panelPM").removeClass("hide");
+  if(data.request_type == "accepted_invitation"){      
       var udata = data.params.user_data;
 	  var room = data.params.room;	  
       ...
