@@ -49,7 +49,8 @@ Framelocker API Docs
 17 | post_status          | POST | {method:"post_status", token, params:{status,message,          | {status,description}                  |
    |  		              |      |                                       attachments}}            |                                       |      
 18 | get_statuses_list    | POST | {method:"get_statuses_list", token, params:{limit, offset}}    | {status,description,statuses:         |
-   |  		              |      |                                                                |  [{id,uid,status,message,attachments}]|      
+   |  		              |      |                                                                |  [{id,uid,status,message,attachments}]|
+19 | getMyContent         | POST | {method:"getMyContent", token}                                 | {status,description,files}            |   
    |  		              |      |    <h3>For WOD chat</h3>                                       |                                       | 
 1  | get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
 2  | assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
