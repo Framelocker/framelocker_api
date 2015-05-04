@@ -133,16 +133,20 @@ socket.on('notifications', function(data){
 ```javascript		
 		...
 		if(data.request_type == 'invite'){
-			var reponse = confirm('You have recieved an invitation from  '+data.name + ". Accept?");
-			if(reponse){
-				// Accept invitation
-				socket.emit('accept_invitaion', {room: data.room}); // 
-			}
+				var reponse = confirm('You have recieved an invitation from  '+data.name + ". Accept? Room "+data.room);
+		        if(reponse){
+		            // Accept invitation		            
+		            socket.emit('accept_invitation', {room: data.room, invite_id:data.invite_id}); // 
+		        }
+		        if(reponse === false){
+		        	socket.emit('reject_invitation', {room: data.room, invite_id:data.invite_id});	
+				}
 		}
 		...		
 ```
-
+>  - For accepting or rejecting invitation - events (accept_invitation, reject_invitation) expect to receive - <b>room</b> and <b>invite_id</b>
 >  - Response data contains field - "room" - `data.room`, which we will use for sending messages
+
 
 * Handling accepting invitation Event:
 
@@ -181,4 +185,12 @@ if(data.request_type == 'invitation_send'){
 ```javascript
 var uids = [id1, id2 ... idn];
 socket.emit('invite_to_chat', {uid:uids});
+```
+
+### Room History
+
+* For selection required range of messages from room, developers should use event: triggerRoomHistory[room, offset, limit]. Event get_messages will contain these messages.
+
+```javascript
+socket.emit('triggerRoomHistory', {room: "roomName", offset:0, limit: 100});			
 ```
