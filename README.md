@@ -63,8 +63,8 @@ Framelocker API Docs
  __|______________________|______|________________________________________________________________|_______________________________________|
 *  | edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
 *  | get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
-___|______________________|______|_______________________________GUEST DEVELOPERS_________________|_______________________________________|
-*  |guest_getVideoOwne... |POST | {method:"guest_getVideoOwnerInfo", secret, params:{video_id}}  | {status, email}                       |                    
+   |                      |      |            ###GUEST DEVELOPERS                                 |                                       |
+*  |guest_getVideoOwne... |POST  | {method:"guest_getVideoOwnerInfo", secret, params:{video_id}}  | {status, email}                       |                    
 ___|______________________|______|________________________________________________________________|_______________________________________|
  <h4>Method details</h4>
  
