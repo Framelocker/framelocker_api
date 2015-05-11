@@ -46,10 +46,8 @@ Framelocker API Docs
    |  		              |      |                                                                |   [{request_id,user_id,message}]      |      
 16 |approve_contact_req...| POST | {method:"approve_contact_request", token, params:{request_id,  | {status,description}                  |
    |  		              |      |      accept:('true' or 'false')}}                              |                                       |      
-17 | post_status          | POST | {method:"post_status", token, params:{status,message,          | {status,description}                  |
-   |  		              |      |                                       attachments}}            |                                       |      
-18 | get_statuses_list    | POST | {method:"get_statuses_list", token, params:{limit, offset}}    | {status,description,statuses:         |
-   |  		              |      |                                                                |  [{id,uid,status,message,attachments}]|
+17 | ~~post_status~~      | POST | ~~{method:"post_status", token, params:{status,message,        | ~~{status,description}~~              |
+   |  		              |      |                                       attachments}} ~~         |                                       |      
 19 | getMyContent         | POST | {method:"getMyContent", token}                                 | {status,description,files}            |   
 20 | change_password      | POST | {method:"change_password", token, params:{current_password,    | {status,description}                  |   
    |  		              |      | new_password}}                                                 |                                       |
@@ -59,9 +57,11 @@ Framelocker API Docs
 3  | wc_post_status  	  | POST | {method:"wc_post_status", token, params: {message,status_icon, | {status, status_id}                   |
    |  		              |      | contact_list}, attachments}                                    |                                       |
 4  | wc_get_status_feed   | POST | {method:"wc_get_status_feed", token}                           | {status, statuses}                    |
-5  | addBox               | POST | {method:"addBox", token, params:{name,latitude,longitude,link  | {status, description, box}            |
+5  | get_statuses_list    | GET  | {method:"get_statuses_list", token, params:{limit, offset}}    | {status,description,statuses:         |
+   |  		              |      |                                                                |  [{id,uid,status,message}]            |
+6  | addBox               | POST | {method:"addBox", token, params:{name,latitude,longitude,link  | {status, description, box}            |
    |                      |      |  [users], image:[file]} }                                      | {status, description}                 |                    
-6  | box_checkin          |      | {method:"box_checkin", token, params:{box_id,data}}            | {status, description}                 |
+7  | box_checkin          |      | {method:"box_checkin", token, params:{box_id,data}}            | {status, description}                 |
  __|______________________|______|________________________________________________________________|_______________________________________|
 *  | edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
 *  | get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
