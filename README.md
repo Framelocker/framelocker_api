@@ -62,6 +62,7 @@ Framelocker API Docs
 6  | addBox               | POST | {method:"addBox", token, params:{name,latitude,longitude,link  | {status, description, box}            |
    |                      |      |  [users], image:[file]} }                                      | {status, description}                 |                    
 7  | box_checkin          |      | {method:"box_checkin", token, params:{box_id,data}}            | {status, description}                 |
+8  | unfollow_friend      | POST | {method:"unfollow_friend", token, params:{contact_id}}         | {status, description}                 |
  __|______________________|______|________________________________________________________________|_______________________________________|
 *  | edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
 *  | get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
