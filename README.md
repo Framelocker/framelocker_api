@@ -58,7 +58,8 @@ Framelocker API Docs
    |  		              |      | contact_list}, attachments}                                    |                                       |
 4  | wc_get_status_feed   | POST | {method:"wc_get_status_feed", token}                           | {status, statuses}                    |
 5  | get_statuses_list    | GET  | {method:"get_statuses_list", token, params:{limit, offset}}    | {status,description,statuses:         |
-   |  		              |      |                                                                |  [{id,uid,status,message}]            |
+   |  		              |      |                                                                |  [{id,uid,status,message,             |
+   |  		              |      |                                                                |  attachments:{name,extension,src}}]   |
 6  | addBox               | POST | {method:"addBox", token, params:{name,latitude,longitude,link  | {status, description, box}            |
    |                      |      |  [users], image:[file]} }                                      | {status, description}                 |                    
 7  | box_checkin          |      | {method:"box_checkin", token, params:{box_id,[data]}}          | {status, description}                 |
