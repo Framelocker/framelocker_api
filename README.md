@@ -61,7 +61,7 @@ Framelocker API Docs
    |  		              |      |                                                                |  [{id,uid,status,message}]            |
 6  | addBox               | POST | {method:"addBox", token, params:{name,latitude,longitude,link  | {status, description, box}            |
    |                      |      |  [users], image:[file]} }                                      | {status, description}                 |                    
-7  | box_checkin          |      | {method:"box_checkin", token, params:{box_id,data}}            | {status, description}                 |
+7  | box_checkin          |      | {method:"box_checkin", token, params:{box_id,[data]}}          | {status, description}                 |
 8  | unfollow_friend      | POST | {method:"unfollow_friend", token, params:{contact_id}}         | {status, description}                 |
  __|______________________|______|________________________________________________________________|_______________________________________|
 *  | edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
@@ -70,6 +70,8 @@ Framelocker API Docs
 *  |guest_getVideoOwne... |POST  | {method:"guest_getVideoOwnerInfo", secret, params:{video_id}}  | {status, email}                       |                    
 ___|______________________|______|________________________________________________________________|_______________________________________|
  <h4>Method details</h4>
+ 
+ > 7) The "Data" parameter of box_checkin method possibly could contain any necessary data
  
  > 8) Role - integer. Value "7" means teacher's role
  
