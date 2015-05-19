@@ -7,6 +7,14 @@
 #### Development Socket - 8081
 #### Production Socket - 8082
 
+## Notifications
+|  RequestType  | Params					|
+|---			|---						|
+| user_login  	| user_id, user_name, room  |
+|   			|				 	  		|
+| 			  	|						   	|
+
+
  *  Enable socket script to site where API will be used:
 
 ```javascript
