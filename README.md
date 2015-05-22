@@ -64,6 +64,9 @@ Framelocker API Docs
    |                      |      |  [users], image:[file]} }                                      | {status, description}                 |                    
 7  | box_checkin          |      | {method:"box_checkin", token, params:{box_id,[data]}}          | {status, description}                 |
 8  | unfollow_friend      | POST | {method:"unfollow_friend", token, params:{contact_id}}         | {status, description}                 |
+9  | setAPNSleepInterval  | POST | {method:"setAPNSleepInterval", token, params:{start,end,utc}}  | {status, description}                 |
+10 | setAPNPushTypes      | POST | {method:"setAPNPushTypes", token, params:{types}}              | {status, settings}                    |
+11 | getAPNSettings       | GET  | {method:"setAPNSleepInterval", token}                          | {status, settings}                    |
  __|______________________|______|________________________________________________________________|_______________________________________|
 *  | edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
 *  | get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
