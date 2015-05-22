@@ -72,6 +72,8 @@ Framelocker API Docs
 ___|______________________|______|________________________________________________________________|_______________________________________|
  <h4>Method details</h4>
  
+ > wc_get_status_feed and get_statuses_list in contacts field holds `status` and `status_for_human` which determine followed status
+ 
  > 7) The "Data" parameter of box_checkin method possibly could contain any necessary data
  
  > 8) Role - integer. Value "7" means teacher's role
