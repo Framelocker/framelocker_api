@@ -9,10 +9,10 @@
 ## Responses:
 
 ### 1. Personal
-![Image](https://github.com/Framelocker/framelocker_api/docs/user_login3.png)
+![Image](https://github.com/Framelocker/framelocker_api/blob/master/docs/user_login3.png)
 
 ### 2. Group
-![Image](https://github.com/Framelocker/framelocker_api/docs/user_login2.png)
+![Image](https://github.com/Framelocker/framelocker_api/blob/master/docs/user_login2.png)
 
 ### 3. Box
-![Image](https://github.com/Framelocker/framelocker_api/docs/user_login1.png)
+![Image](https://github.com/Framelocker/framelocker_api/blob/master/docs/user_login1.png)
