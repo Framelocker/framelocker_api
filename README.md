@@ -69,6 +69,7 @@ Framelocker API Docs
 10 | setAPNPushTypes      | POST | {method:"setAPNPushTypes", token, params:{types}}              | {status, settings}                    |
 11 | getAPNSettings       | GET  | {method:"setAPNSleepInterval", token}                          | {status, settings}                    |
 12 | checkToken           | POST | {method:"checkToken", token, params:{token}}                   | {status, description}                 |
+13 | search_box           | GET  | {method:"search_box", token, params:{query}}                   | {status, description, boxes}          |
  __|______________________|______|________________________________________________________________|_______________________________________|
 *  | edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
 *  | get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
