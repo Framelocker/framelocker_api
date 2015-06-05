@@ -70,6 +70,7 @@ Framelocker API Docs
 11 | getAPNSettings       | GET  | {method:"setAPNSleepInterval", token}                          | {status, settings}                    |
 12 | checkToken           | POST | {method:"checkToken", token, params:{token}}                   | {status, description}                 |
 13 | search_box           | GET  | {method:"search_box", token, params:{query}}                   | {status, description, boxes}          |
+14 | box_follow_switcher  | POST | {method:"box_follow_switcher", token, params:{box_id,state}}   | {status, description}                 |
  __|______________________|______|________________________________________________________________|_______________________________________|
 *  | edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
 *  | get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
@@ -77,6 +78,8 @@ Framelocker API Docs
 *  |guest_getVideoOwne... |POST  | {method:"guest_getVideoOwnerInfo", secret, params:{video_id}}  | {status, email}                       |                    
 ___|______________________|______|________________________________________________________________|_______________________________________|
  <h4>Method details</h4>
+ 
+ > `box_follow_switcher` - state : 1 - follow, 2 - unfollow (default value 1)
  
  > wc_get_status_feed and get_statuses_list in contacts field holds `status` and `status_for_human` which determine followed status
  
