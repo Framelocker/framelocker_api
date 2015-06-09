@@ -33,7 +33,8 @@ Framelocker API Docs
    |					  |		 |	[response_host]	}}                                            | {status, description}                 |     
  4 | signin      		  | POST | {method:"signin", params:{login, pass}}                        | {status, description, <b>token</b>}   |
  5 | signout      		  | POST | {method:"signout", token}                                      | {status, description}                 |         
- 6 | upload_avatar 		  | POST | {method:"upload_avatar", token, novp_file}                     | {status, description, [filename]}     |          
+ 6 | [upload_avatar]      | POST | {method:"upload_avatar", token, novp_file}                     | {status, description, [filename]}     |          
+   | (/docs/upload_avatar.md)| | | |                                     
  7 | set_name      		  | POST | {method:"set_name", token, params: {fstname, lstname}}         | {status, description}                 |      
  8 | add_user             | POST | {method:"add_user", token, params: {name,role=7,email,message}}| {status, description}                 |      
  9 | assigning_to_facebook| POST | {method:"assigning_to_facebook",token,                         |                                       |   
