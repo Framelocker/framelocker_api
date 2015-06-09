@@ -11,4 +11,5 @@
 ```
 
 > `value="13d125e7bcb2483e715e9f97f9d7a16f31f9ba0f"` - the user's token
+
 > `action="http://pro.local/app/api"` URL to to your site. For example - `http://app.theartemisnetwork.com/app/api`
