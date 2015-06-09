@@ -9,3 +9,5 @@
 </form>
 
 ```
+
+> `value="13d125e7bcb2483e715e9f97f9d7a16f31f9ba0f"` - the user's token
