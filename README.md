@@ -52,6 +52,7 @@ Framelocker API Docs
 19 | getMyContent         | POST | {method:"getMyContent", token}                                 | {status,description,files}            |   
 20 | change_password      | POST | {method:"change_password", token, params:{current_password,    | {status,description}                  |   
    |  		              |      | new_password}}                                                 |                                       |
+21 | setAssets            | POST | {method:"setAssets", token, params:{file_id,asset_ids}}        | {status,description}                  |      
    |  		              |      |    <h3>For WOD chat</h3>                                       |                                       | 
 1  | get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
 2  | assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
