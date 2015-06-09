@@ -76,6 +76,7 @@ Framelocker API Docs
 *  | get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
    |                      |      |            <h3>GUEST DEVELOPERS</h3>                           |                                       |
 *  |guest_getVideoOwne... |POST  | {method:"guest_getVideoOwnerInfo", secret, params:{video_id}}  | {status, email}                       |                    
+*  |guest_resetpasword    |POST  | {method:"guest_resetpasword", secret, params:{email}}          | {status, description}                 |                    
 ___|______________________|______|________________________________________________________________|_______________________________________|
  <h4>Method details</h4>
  
