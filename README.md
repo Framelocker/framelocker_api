@@ -31,7 +31,8 @@ Framelocker API Docs
    |             		  |      |                                                        		  | filename,size,ext,aws,date}]}         |
  3 | register      		  | POST | {method:"register", params: {username, password, [novp_file],  |                                       |
    |					  |		 |	[response_host]	}}                                            | {status, description}                 |     
- 4 | signin      		  | POST | {method:"signin", params:{login, pass}}                        | {status, description, <b>token</b>}   |
+ 4 | signin      		  | POST | {method:"signin", params:{login, pass}}                        | {status, description,user_data,       |
+   |           		      |      |                                                                |  <b>token</b>}                        |         
  5 | signout      		  | POST | {method:"signout", token}                                      | {status, description}                 |         
  6 | [upload_avatar](/docs/upload_avatar.md)      | POST | {method:"upload_avatar", token, novp_file}                     | {status, description, [filename]}     |             
  7 | set_name      		  | POST | {method:"set_name", token, params: {fstname, lstname}}         | {status, description}                 |      
