@@ -81,6 +81,7 @@ Framelocker API Docs
 14 | box_follow_switcher  | POST | {method:"box_follow_switcher", token, params:{box_id,state}}   | {status, description}                 |
 15 | delete_contact       | POST | {method:"delete_contact", token, params:{contact_id}}          | {status, description}                 |
 16 | follow_friend        | POST | {method:"follow_friend", token, params:{contact_id}}           | {status, description}                 |
+17 | get_user_checkins    | GET  | {method:"get_user_checkins", token}                            | {status, checkins}                    |
  __|______________________|______|________________________________________________________________|_______________________________________|
 *  | edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
 *  | get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
