@@ -55,8 +55,11 @@ Framelocker API Docs
 20 | change_password      | POST | {method:"change_password", token, params:{current_password,    | {status,description}                  |   
    |  		              |      | new_password}}                                                 |                                       |
 21 | setAssets            | POST | {method:"setAssets", token, params:{file_id,asset_ids}}        | {status,description}                  |
-22 | get_stickers         | POST | {method:"get_stickers", token}                                 | {status,stickers:{packname:[          |
-   |                      |      |                                                                | {pack_name,sticker_name,url}]}}       |      
+22 | get_stickers         | POST | {method:"get_stickers", token}                                 | {status,stickers:{                    |
+   |                      |      |                                                                |   packname:{                          |
+   |                      |      |                                                                |    pack_name, pack_preview,           | 
+   |                      |      |                                                                |    pack_stickers:{                    | 
+   |                      |      |                                                                |     pack_name, sticker_name, url}}}}  | 
    |  		              |      |    <h3>For WOD chat</h3>                                       |                                       | 
 1  | get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
 2  | assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
