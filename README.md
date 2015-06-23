@@ -59,8 +59,14 @@ Framelocker API Docs
    |                      |      |                                                                |   packname:{                          |
    |                      |      |                                                                |    pack_name, pack_preview,           | 
    |                      |      |                                                                |    pack_stickers:{                    | 
-   |                      |      |                                                                |     pack_name, sticker_name,url}}}}   | 
-   |  		              |      |    <h3>For WOD chat</h3>                                       |                                       | 
+   |                      |      |                                                                |     pack_name, sticker_name,url}}}}   |
+   |  		              |      |    <h3>Chune</h3>                                              |                                       |
+1  | get_all_genres		  | POST | {method:"get_all_genres", token}                               | {status,data:[{id,name}]}             |
+2  | get_all_bands		  | POST | {method:"get_all_bands", token}                                | {status,data:[{id,name,desc,ava}]}    |
+3  | get_all_artists	  | POST | {method:"get_all_artists", token}                              | {status,data:[{id,name,desc,ava}]}    |
+4  | get_all_contacts	  | POST | {method:"get_all_contacts", token}                             | {status,users:{{id,name,avatar,email}}|
+   |  		              |      |                                                                |                                       |
+   |  		              |      |    <h3>For WOD chat</h3>                                       |                                       |    
 1  | get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
 2  | assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
 3  | wc_post_status  	  | POST | {method:"wc_post_status", token, params: {message,status_icon, | {status, status_id}                   |
