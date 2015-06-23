@@ -59,7 +59,7 @@ Framelocker API Docs
    |                      |      |                                                                |   packname:{                          |
    |                      |      |                                                                |    pack_name, pack_preview,           | 
    |                      |      |                                                                |    pack_stickers:{                    | 
-   |                      |      |                                                                |     pack_name, sticker_name, url}}}}  | 
+   |                      |      |                                                                |     pack_name, sticker_name,url}}}}   | 
    |  		              |      |    <h3>For WOD chat</h3>                                       |                                       | 
 1  | get_boxes		      | GET  | {method:"get_boxes", token}                                    | {status, description, boxes}          |
 2  | assign_box    		  | POST | {method:"assign_box", token, params: {uid, box}}               | {status, description}                 |
