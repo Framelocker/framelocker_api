@@ -81,7 +81,7 @@ Framelocker API Docs
 7  | box_checkin          |      | {method:"box_checkin", token, params:{box_id,[data]}}          | {status, description}                 |
 8  | unfollow_friend      | POST | {method:"unfollow_friend", token, params:{contact_id}}         | {status, description}                 |
 9  | setAPNSleepInterval  | POST | {method:"setAPNSleepInterval", token, params:{start,end,utc}}  | {status, description}                 |
-10 | setAPNPushTypes      | POST | {method:"setAPNPushTypes", token, params:{types}}              | {status, settings}                    |
+10 | setAPNPushTypes      | POST | {method:"setAPNPushTypes", token, params:{types:[1,2]}}        | {status, settings}                    |
 11 | getAPNSettings       | GET  | {method:"setAPNSleepInterval", token}                          | {status, settings}                    |
 12 | checkToken           | POST | {method:"checkToken", token, params:{token}}                   | {status, description}                 |
 13 | search_box           | GET  | {method:"search_box", token, params:{query}}                   | {status, description, boxes}          |
@@ -97,6 +97,8 @@ Framelocker API Docs
 *  |guest_resetpasword    |POST  | {method:"guest_resetpasword", secret, params:{email}}          | {status, description}                 |                    
 ___|______________________|______|________________________________________________________________|_______________________________________|
  <h4>Method details</h4>
+ 
+ > `setAPNPushTypes` - format: 1 - Personal Message, 2 - Group Message
  
  > `box_follow_switcher` - state : 1 - follow, 2 - unfollow (default value 1)
  
