@@ -62,7 +62,7 @@ Framelocker API Docs
    |                      |      |                                                                |    pack_stickers:{                    | 
    |                      |      |                                                                |     pack_name, sticker_name,url}}}}   |
 23 | update_user_settings | POST | {method:"update_user_settings", token, params:{name,           | {status,description}                  |
-   |                      |      |  new_password, current_password}}                              |  									  | 
+   |                      |      |  new_password, current_password, country_code}}                |  									  | 
    |                      |      |                                                                |  									  |   
    |  		              |      |    <h3>Chune</h3>                                              |                                       |
 1  | get_all_genres		  | POST | {method:"get_all_genres", token}                               | {status,data:[{id,name}]}             |
