@@ -26,7 +26,7 @@ Framelocker API Docs
  # | Method        		  | TYPE | Request                                                        | Response                              |
 ---|----------------------|------|----------------------------------------------------------------|---------------------------------------|
  1 | upload_file  		  | POST | {method:upload_file, token, novp_file,[title],[description],   |                                       |
-   |					  |      |  response_host]}   											  | {status, description, [title, src]}   |
+   |					  |      |  [response_host], [site_upload:1]}     						  | {status, description, [title, src]}   |
  2 | get_files   		  | GET  | {method:get_files, token}                                      | {status, description,                 |
    |			 		  |	     |  														 	  | [file_data:{id,user_id,bucket_id,     |
    |             		  |      |                                                        		  | filename,size,ext,aws,date}]}         |
@@ -63,7 +63,8 @@ Framelocker API Docs
    |                      |      |                                                                |     pack_name, sticker_name,url}}}}   |
 23 | update_user_settings | POST | {method:"update_user_settings", token, params:{name,           | {status,description}                  |
    |                      |      |  new_password, current_password, country_code}}                |  									  | 
-   |                      |      |                                                                |  									  |   
+24 | umusicapi_upload_... |POST  | {method:"umusicapi_upload_from_ftp", token}                    |  									  |   
+   |                      |      |                                                                |  									  |      
    |  		              |      |    <h3>Chune</h3>                                              |                                       |
 1  | get_all_genres		  | POST | {method:"get_all_genres", token}                               | {status,data:[{id,name}]}             |
 2  | get_all_bands		  | POST | {method:"get_all_bands", token}                                | {status,data:[{id,name,desc,ava}]}    |
