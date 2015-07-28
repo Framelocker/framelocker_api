@@ -62,7 +62,7 @@ Framelocker API Docs
    |                      |      |                                                                |    pack_stickers:{                    | 
    |                      |      |                                                                |     pack_name, sticker_name,url}}}}   |
 23 | update_user_settings | POST | {method:"update_user_settings", token, params:{name,           | {status,description}                  |
-   |                      |      |  new_password, current_password, country_code}}                |  									  | 
+   |                      |      |  new_password, current_password, country_code,avatar}}         |  									  | 
 24 | umusicapi_upload_... |POST  | {method:"umusicapi_upload_from_ftp", token}                    |  									  |   
    |                      |      |                                                                |  									  |      
    |  		              |      |    <h3>Chune</h3>                                              |                                       |
