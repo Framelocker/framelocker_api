@@ -4,4 +4,4 @@
 
 ### Coordinates
 
-![Image](https://github.com/Framelocker/framelocker_api/blob/master/docs/kuboxx/remove_pixels.jpg)
+![Image](https://github.com/Framelocker/framelocker_api/blob/master/docs/kuboxx/remove_pixels1.jpg)
