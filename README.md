@@ -97,6 +97,9 @@ Framelocker API Docs
  __|______________________|______|________________________________________________________________|_______________________________________|
 *  | edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
 *  | get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
+*  | set_video_statistic  | POST | {method:"set_video_statistic", token, params:{file_id          | {status, file}                        |
+   |                      |      |                                          ,percentage}}         |                                       |
+*  | get_video_statistic  | GET  | {method:"get_video_statistic", token, params:{file_id}}        | {status, file}                        |
    |                      |      |            <h3>GUEST DEVELOPERS</h3>                           |                                       |
 *  |guest_getVideoOwne... |POST  | {method:"guest_getVideoOwnerInfo", secret, params:{video_id}}  | {status, email}                       |                    
 *  |guest_resetpasword    |POST  | {method:"guest_resetpasword", secret, params:{email}}          | {status, description}                 |                    
