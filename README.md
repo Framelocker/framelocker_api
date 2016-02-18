@@ -96,6 +96,7 @@ Framelocker API Docs
 17 | get_user_checkins    | GET  | {method:"get_user_checkins", token}                            | {status, checkins}                    |
  __|______________________|______|________________________________________________________________|_______________________________________|
 *  | edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
+*  | getBoxById           | GET  | {method:"getBoxById", token, params:{box_id}}                  | {status, box}                         |
 *  | get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
 *  | set_video_statistic  | POST | {method:"set_video_statistic", token, params:{file_id          | {status, file}                        |
    |                      |      |                                          ,percentage}}         |                                       |
