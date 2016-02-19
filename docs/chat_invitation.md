@@ -77,7 +77,11 @@ socket.on('notifications', function(data){
 ### Kick from room
 
 * if user is creator of this room (he starts to invite people)
+ 
+ ```javascript	 
   socket.emit("kick_from_room", {"uid":"84", "room":"772->84"});
+```
+
 * it kicks from room user with ID 84  
 
 ### Send Message
