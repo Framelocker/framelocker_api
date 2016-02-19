@@ -56,6 +56,12 @@ socket.on('notifications', function(data){
   socket.emit('join_room', {room:room});
 ```
 
+* To leave room - leave_room:
+
+```javascript	
+  socket.emit('leave_room', {room:room});
+```
+
 * We can listen log of our activity("notifications"):
 
 ```javascript	
