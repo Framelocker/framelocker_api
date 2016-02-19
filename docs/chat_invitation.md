@@ -74,6 +74,12 @@ socket.on('notifications', function(data){
 
 > - Also response data contains "request_type" field it helps defined response type. For now API supports request_type with values: "operation" and "invite"
 
+### Kick from room
+
+* if user is creator of this room (he starts to invite people)
+  socket.emit("kick_from_room", {"uid":"84", "room":"772->84"});
+* it kicks from room user with ID 84  
+
 ### Send Message
 
 * To handle with "sending messages" operation just send message to socket(send_message) using token and room:
