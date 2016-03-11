@@ -95,6 +95,8 @@ Framelocker API Docs
 16 | follow_friend        | POST | {method:"follow_friend", token, params:{contact_id}}           | {status, description}                 |
 17 | get_user_checkins    | GET  | {method:"get_user_checkins", token}                            | {status, checkins}                    |
  __|______________________|______|________________________________________________________________|_______________________________________|
+*  | hydravid_login       | POST | {method:"hydravid_login", {method:"signin", params:{login,     |                                       |
+   |                      |      |  email, pass}}                                                 | {status, user_data}                   |
 *  | edit_file            | POST | {method:"edit_file", token, params:{fid, title, description}}  | {status, description}                 |
 *  | getBoxById           | GET  | {method:"getBoxById", token, params:{box_id}}                  | {status, box}                         |
 *  | get_user_list        | GET  | {method:"get_user_list", token, params:{[limit], [offset]}}    | {status, description, users}          |
