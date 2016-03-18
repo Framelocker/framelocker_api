@@ -83,7 +83,7 @@ socket.on('notifications', function(data){
 	socket.emit("reorganized_current_chat", {room_id:10, user_ids:ids});
 ```
 
-> - ids - an array of ids ( [1,2,3,4,5] )
+> - ids - an array of user ids ( [1,2,3,4,5] )
 
 ### Kick from room
 
