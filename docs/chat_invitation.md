@@ -74,6 +74,17 @@ socket.on('notifications', function(data){
 
 > - Also response data contains "request_type" field it helps defined response type. For now API supports request_type with values: "operation" and "invite"
 
+### reorganized_current_chat
+
+* to change chat name:
+	Example:
+	
+```javascript
+	socket.emit("reorganized_current_chat", {room_id:10, user_ids:ids});
+```
+
+> - ids - an array of ids ( [1,2,3,4,5] )
+
 ### Kick from room
 
 * if user is creator of this room (he starts to invite people)
