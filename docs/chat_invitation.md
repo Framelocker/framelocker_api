@@ -83,6 +83,31 @@ socket.on('notifications', function(data){
 	socket.emit("reorganized_current_chat", {current_room:"810->800", new_room:"810->802->800"});
 ```
 
+Possible notifications: 
+
+```javascript
+Object {request_type: "user_kicked", chatName: "815->810->800"}
+```
+
+```javascript
+Object {request_type: "chatName_change", chatName: "815->810->800"}
+```
+
+```javascript		
+		...
+		if(data.request_type == 'invite'){
+				var reponse = confirm('You have recieved an invitation from  '+data.name + ". Accept? Room "+data.room);
+		        if(reponse){
+		            // Accept invitation		            
+		            socket.emit('accept_invitation', {room: data.room, invite_id:data.invite_id}); // 
+		        }
+		        if(reponse === false){
+		        	socket.emit('reject_invitation', {room: data.room, invite_id:data.invite_id});	
+				}
+		}
+		...		
+```
+
 
 ### Kick from room
 
