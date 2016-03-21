@@ -80,10 +80,9 @@ socket.on('notifications', function(data){
 	Example:
 	
 ```javascript
-	socket.emit("reorganized_current_chat", {room_id:10, user_ids:ids});
+	socket.emit("reorganized_current_chat", {current_room:"810->800", new_room:"810->802->800"});
 ```
 
-> - ids - an array of user ids ( [1,2,3,4,5] )
 
 ### Kick from room
 
