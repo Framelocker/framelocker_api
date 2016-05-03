@@ -1,4 +1,4 @@
-Framelocker API Docs
+Framelocker API Docs 
 ========
 
 <h3>Navigation</h3>
@@ -38,7 +38,8 @@ Framelocker API Docs
  5 | signout      		  | POST | {method:"signout", token}                                      | {status, description}                 |         
  6 | [upload_avatar](/docs/upload_avatar.md)      | POST | {method:"upload_avatar", token, novp_file}                     | {status, description, [filename]}     |             
  7 | set_name      		  | POST | {method:"set_name", token, params: {fstname, lstname}}         | {status, description}                 |      
- 8 | add_user             | POST | {method:"add_user", token, params: {name,role=7,email,message}}| {status, description}                 |      
+ 8 | add_user             | POST | {method:"add_user", token, params: {name,role=7,email,message, | {status, description}                 |      
+   |                      |      | [makeact_lnk]}}                                                |                                       |
  9 | assigning_to_facebook| POST | {method:"assigning_to_facebook",token,                         |                                       |   
    |                      |      |          params:{fid,access_token}}                            | {status, description}                 |
 10 | facebook_signin      | POST | {method:"facebook_signin", params:{fid, access_token}}         | {status, description, user_data}      |
