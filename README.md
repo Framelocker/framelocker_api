@@ -27,6 +27,7 @@ Framelocker API Docs
 ---|----------------------|------|----------------------------------------------------------------|---------------------------------------|
  1 | upload_file  		  | POST | {method:upload_file, token, novp_file,[title],[description],   |                                       |
    |					  |      |  [response_host], [site_upload:1]}     						  | {status, description, [title, src]}   |
+   |					  |      | novp_file - content or url          		    				  |                                       |
  2 | get_files   		  | GET  | {method:get_files, token}                                      | {status, description,                 |
    |			 		  |	     |  														 	  | [file_data:{id,user_id,bucket_id,     |
    |             		  |      |                                                        		  | filename,size,ext,aws,date}]}         |
